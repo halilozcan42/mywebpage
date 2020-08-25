@@ -114,29 +114,33 @@ nav {
     display: none;
 }
 
-@media (max-width: 992) {
+@media (max-width: 992px) {
     #logo-box {
         float: none;
         text-align: left;
     }
     #nav-links {
         float: none;
+        padding-top: 0;
     }
     #nav-links.responsive li:not(:first-child) {
-        display: block;
-    }
-    #nav-links .nav-link {
-        font-size: 2rem;
-        padding-left: 0;
+        display: none;
     }
     #nav-links .nav-item {
         float: none;
+        padding-left: 4rem;
         text-align: left;
+    }
+    #nav-links .nav-link {
+        float: none;
+        padding-left: 0;
+        font-size: 1.5rem;
+        font-weight: 100;
     }
     #nav-links .nav-icon {
         display: block;
         position: absolute;
-        top: 10px;
+        top: 5px;
         right: 5px;
         font-size: 3rem;
     }
@@ -304,6 +308,25 @@ hr.star-dark {
     padding-right: 10rem;
 }
 
+@media (max-width:992px) {
+    #about-text .left {
+        float: none;
+        width: 100%;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+    #about-text p {
+        text-indent: 2rem;
+        text-align: justify;
+    }
+    #about-text .right {
+        float: none;
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
 #about .star-dark::after {
     left: 10.6rem;
 }
@@ -396,6 +419,13 @@ hr.star-dark {
     color: gray;
     font-size: 1.2rem;
     font-weight: 200;
+}
+
+@media (max-width:786px) {
+    .col {
+        float: none;
+        width: 100%;
+    }
 }
 
 footer {

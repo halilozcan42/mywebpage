@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halil Ozcan Official We Site, Halil Özcan, Ozcan Halil">
+    <meta name="keywords" content="Halil, Ozcan, HAlil Ozcan">
+    <meta name="author" content="Halil Ozcan">
     <title>Halil Ozcan Official Web Site</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
@@ -22,8 +25,8 @@
             <div id="nav-links" class="responsive">
                 <ul>
                     <li class="nav-item">
-                        <a href="#header" class="nav-link text-uppercase nav-icon">
-                            <i class="fas fa-bars"></i>
+                        <a href="#" id="icon" class="nav-link text-uppercase nav-icon">
+                            <i onclick="myFunction()" class="fas fa-bars"></i>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -68,20 +71,17 @@
             <hr class="star-dark">
             <div id="about-text">
                 <div class="left">
-                    <p>My name's Halil. I'm 32 years old. I'm from Konya. I was born in 1987 in Konya. I studied economy at Erciyes University. I'm an economist. My father is a pensioner and my mother is a housewife. I have six siblings. I got married to
-                        Unzile in 2015. She is theologist. She is on parental leave right now. I have two sons. One of them is three years old. Another is just seven months. This is my older son. His name's Cemal Isak. He has dark brown hair and black
-                        eyes. He is very thin. He weighs 11 kilograms. He is quite tall. My son's a good-looking kid. My favourite colors are dark blue and yellow. My favourite sports are football and basketball. I'm interested in marbling art and relief
-                        art. I like going for a walk and be in nature. I like reading all sorts of books especially philosophical books. I used to read every day. However, right now I can't read as much as before. Now I try to read English stories books
-                        everyday. I like writing programming code. I like meeting my friends. I like playing with my sons.
+                    <p>My name's Halil. I'm 32 years old. I'm from Turkey. I was born in 1987 in Konya. I studied economy at Erciyes University.I got married to Unzile in 2015. She is theologist. She is on parental leave right now. I have two sons. One of
+                        them is three years old. Another is just one years old.
+
+                        <br><br> My favourite colors are dark blue and yellow. My favourite sports are football and basketball. I'm interested in marbling art and relief art.
 
                     </p>
                 </div>
                 <div class="right">
-                    <p> I live in Helsingborg. I lived in three different cities in Sweden. These are Stockholm, Göteborg and Helsingborg. Helsingborg has a most beautiful view. My hometown is bigger than helsingborg, but helsingborg is greener than my hometown.
-                        I came to Sweden five years ago. I came here as a volunteer of an association. The association dealt with teaching the Turkish language and cultural dance for young people to join competitions. When I was in Stockholm, it happened
-                        a military coup in 2016 in my country. The government accused a social organisation where was a member of. For this reason I couldn't return to my country after that. But I still belong to the organisation. I could never imagine
-                        that I would have to apply to immigration office in Sweden. If I need to summarize, I am a political refugee who can't return home right now. As a matter of fact, It was the hardest to know that I won't return home for a long time.
-                        But I'll go to my country one day. Even so I don't worry and try to be happy. Because life continues despite of everything.
+                    <p>I like going for a walk and being in nature. I like reading all sorts of books especially philosophical books. I used to read every day. However, right now I can't read as much as before. Now I try to read English stories books everyday.
+                        I like writing programming code. I like meeting my friends. I like playing with my sons. I live in Helsingborg.<br><br> I lived in three different cities in Sweden. These are Stockholm, Göteborg and Helsingborg. I came to Sweden
+                        five years ago.
                     </p>
                 </div>
             </div>
@@ -167,43 +167,21 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script type="text/javascript">
-        window.addEventListener('mousemove', function(e) {
-            console.log(`x: ${ e.x } | y: ${ e.y }`)
-        });
+        function myFunction() {
+            var x = document.getElementById("nav-links");
+            if (x.className === "responsive") {
+                x.className = "";
+            } else {
+                x.className = "responsive";
+
+            }
+        }
+        /*
+                window.addEventListener('mousemove', function(e) {
+                    console.log(`x: ${ e.x } | y: ${ e.y }`)
+                });
+        */
     </script>
 
 </body>
