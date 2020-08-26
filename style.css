@@ -164,7 +164,7 @@ header {
 
 .image-container {
     width: 100%;
-    background-image: url("/img/my-image.jpg");
+    background-image: url("img/my-image.jpg");
     background-size: cover;
     position: relative;
     height: 500px;
