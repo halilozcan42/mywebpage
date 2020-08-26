@@ -165,6 +165,7 @@ header {
 .image-container {
     width: 100%;
     background-image: url("./img/my-image.jpg");
+    color: #000;
     background-size: cover;
     position: relative;
     height: 500px;
